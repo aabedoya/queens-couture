@@ -1,6 +1,5 @@
-import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import { Badge } from '@material-ui/core';
-
+import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
 
@@ -8,25 +7,22 @@ const Container = styled.div
 `
     height: 60px;
 `
-const Language = styled.span`
-    font-size: 14px;
-    cursor: pointer;
-`;
-
-const Wrapper = styled.div
-`
+const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
     aling-items: center;
     justify-content: space-between;
-`
-
-
+`;
 
 const Left = styled.div`
     flex: 1;
     display: flex;
     aling-items: center;
+`;
+
+const Language = styled.span`
+    font-size: 14px;
+    cursor: pointer;
 `;
 
 const SearchContainer = styled.div`
@@ -35,11 +31,11 @@ const SearchContainer = styled.div`
     aling-items: center;
     margin-left: 25px;
     padding: 5px;
-`
+`;
 
 const Input = styled.input`
     border: none;
-`
+`;
 
 const Center = styled.div`
     flex: 1;
