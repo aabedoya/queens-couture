@@ -6,18 +6,18 @@ import styled from 'styled-components'
 const Container = styled.div
 `
     height: 60px;
-`
+`;
 const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
-    aling-items: center;
+    align-items: center;
     justify-content: space-between;
 `;
 
 const Left = styled.div`
     flex: 1;
     display: flex;
-    aling-items: center;
+    align-items: center;
 `;
 
 const Language = styled.span`
@@ -28,7 +28,7 @@ const Language = styled.span`
 const SearchContainer = styled.div`
     border: 0.5px solid lightgray;
     display: flex;
-    aling-items: center;
+    align-items: center;
     margin-left: 25px;
     padding: 5px;
 `;
@@ -42,17 +42,23 @@ const Center = styled.div`
     text-align: center;
 `;
 
-const Logo = styled.h1`
-    font-weight: bold;
+const Logo = styled.img`
+    align-items: center;
+    max-width:40%;
+    max-height:40%;
 `;
 
 const Right = styled.div`
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 `;
 
 const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
+    margin-left: 25px;
 `;
 
 const Navbar = () => {
@@ -63,15 +69,15 @@ const Navbar = () => {
                     <Language>EN</Language>
                     <SearchContainer>
                         <Input/>
-                        <Search/>
+                        <Search style={{color:"gray", fontSize:16}}/>
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Logo>QUEENS-COUTURE</Logo>
+                    <Logo src="https://i.ibb.co/PrmWqhL/BannerQC.png"/>
                 </Center>
                 <Right>
-                    <MenuItem>Registarse</MenuItem>
-                    <MenuItem>Ingresar</MenuItem>
+                    <MenuItem>REGISTRARSE</MenuItem>
+                    <MenuItem>INGRESAR</MenuItem>
                     <MenuItem>
                         <Badge badgeContent={4} color="primary">
                             <ShoppingCartOutlined/>
