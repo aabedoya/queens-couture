@@ -1,16 +1,19 @@
 import styled from 'styled-components';
+import { mobile } from "../responsive";
 
 const Container = styled.div`
     flex:1
     margin: 3px;
     height: 70vh;
     position: relative;
-    
 `;
+
 const Image = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    ${mobile({ height: "20vh" })}
+
 `;
 
 const Info = styled.div`
@@ -22,17 +25,14 @@ const Info = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    
+    justify-content: center;
 `;
 
 const Title = styled.h1`
-    
-    magin-bottom: 20px;
-    color: #d9d9d9;
-    
-    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    color:white;
+    margin-bottom: 20px;
 `;
+
 const Button = styled.button`
     border: none;
     padding: 10px;
@@ -55,4 +55,4 @@ const CategoryItem = ({item}) => {
     )
 }
 
-export default CategoryItem
+export default CategoryItem;
