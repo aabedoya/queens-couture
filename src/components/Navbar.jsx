@@ -49,6 +49,7 @@ const Center = styled.div`
 
 const Logo = styled.img`
     font-weight: bold;
+    max-height: 50px;
     ${mobile({ fontSize: "24px" })}
 `;
 const Right = styled.div`
